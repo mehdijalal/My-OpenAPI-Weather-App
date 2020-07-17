@@ -22,7 +22,7 @@
             var city = $('#searchweather').val();
             console.log(city);
             var apiKey = "b424959250c07e3d429e2f433eb0f585";
-            $.getJSON("http://api.openweathermap.org/data/2.5/find?q="+city+"&appid=" + apiKey, function (data) {
+            $.getJSON("https://api.openweathermap.org/data/2.5/find?q="+city+"&appid=" + apiKey, function (data) {
                         console.log(data);
                         //console.log(data.list[0]);
                         //console.log(data.list[0].name);
@@ -48,7 +48,7 @@
 
         function getCityWeather(city){
             var apiKey = "b424959250c07e3d429e2f433eb0f585";
-            $.getJSON("http://api.openweathermap.org/data/2.5/find?q="+city+"&appid=" + apiKey, function (data) {
+            $.getJSON("https://api.openweathermap.org/data/2.5/find?q="+city+"&appid=" + apiKey, function (data) {
                         console.log(data);
                         //console.log(data.list[0]);
                         //console.log(data.list[0].name);
